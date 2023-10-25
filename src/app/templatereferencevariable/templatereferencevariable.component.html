@@ -1,0 +1,9 @@
+<!-- first example -->
+<input [type]="'text'" #value (keyup)="0">
+<p>{{value.value}}</p>
+<!-- second example -->
+<div>
+</div>
+<input [type]="'text'" #value1 (keyup)="0">
+<button (click)="capture(value1)">clickme</button>
+<p>{{value1.value}}</p>
